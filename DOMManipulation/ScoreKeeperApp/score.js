@@ -51,6 +51,7 @@ function reset(){
 numInput.addEventListener("click", function(){
     winningScoreDisplay.textContent = numInput.value;
     winngingScore = Number(numInput.value);
+    reset();
 });
 
 
