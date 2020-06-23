@@ -40,6 +40,10 @@ resetButton.addEventListener("click", function(){
     p2Display.classList.remove("winner");
     gameOver = false;
 
-})
+});
+
+numInput.addEventListener("click", function(){
+    
+});
 
 
