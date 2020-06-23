@@ -5,6 +5,7 @@ var p1Display = document.querySelector("#p1Display");
 var p2Display = document.querySelector("#p2Display");
 var numInput = document.querySelector("input");
 var p = document.querySelector("p");
+var winningScoreDisplay = document.querySelector("p span");
 var p1Score = 0;
 var p2Score = 0;
 var gameOver = false;
