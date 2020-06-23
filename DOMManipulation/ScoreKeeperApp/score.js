@@ -34,8 +34,7 @@ p2Button.addEventListener("click", function(){
 });
 
 resetButton.addEventListener("click", function(){
-    
-
+    reset();
 });
 
 function reset(){
