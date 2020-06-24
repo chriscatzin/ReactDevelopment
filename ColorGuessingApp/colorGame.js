@@ -4,30 +4,31 @@ var colors = [
     "rgb(0, 255, 0)",
     "rgb(0, 255, 255)",
     "rgb(0, 0, 255)",
-    "rgb(255, 0, 255)",
+    "rgb(255, 0, 255)"
 ]
 
-var squares = document.querySelector(".square");
+var squares = document.querySelectorAll(".square");
 var pickedColor = colors[3];
 var colorDisplay = document.getElementById("colorDisplay");
-var messageDisplay = document.querySelector(".message");
+var messageDisplay = document.querySelector("#message");
 
 colorDisplay.textContent = pickedColor;
 
-for(var i=0; i < squares.length; i++){
+for(var i = 0; i < squares.length; i++){
     // add initial colors to squares
     squares[i].style.backgroundColor = colors[i];
 
     // add click listeners to squares
-    sqaures[i].addEventListener("click", function(){
+    squares[i].addEventListener("click", function(){
         // Grab color of clicked squares.
         var clickedColor = this.style.backgroundColor;
 
         // Compare color to pickedColor.
         if(clickedColor === pickedColor){
-            alert("correcr!");
-        }else{
+            alert("correct!");
+        } else{
             this.style.backgroundColor = "#232323";
+            messageDisplay.textContent = "Try Again";
         }
     });
 }
