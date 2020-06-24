@@ -19,6 +19,14 @@ for(var i=0; i < squares.length; i++){
 
     // add click listeners to squares
     sqaures[i].addEventListener("click", function(){
-        
+        // Grab color of clicked squares.
+        var clickedColor = this.style.backgroundColor;
+
+        // Compare color to pickedColor.
+        if(clickedColor === pickedColor){
+            alert("correcr!");
+        }else{
+            this.style.backgroundColor = "#232323";
+        }
     })
 }
