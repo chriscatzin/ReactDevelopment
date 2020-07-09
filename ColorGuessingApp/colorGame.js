@@ -1,4 +1,5 @@
 // Christopher Catzin
+// Last Modified: 
 
 var numOfSquares = 6;
 var colors = generateRandomColors(numOfSquares);
