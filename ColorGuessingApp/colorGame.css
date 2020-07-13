@@ -1,5 +1,7 @@
 body{
     background-color: #232323;
+    margin: 0;
+    font-family: "Montserrat", "Avenir";
 }
 
 .square{
@@ -13,6 +15,7 @@ h1{
     text-align: center;
     color: white;
     background: steelblue;
+    margin: 0;
 }
 
 #container{
