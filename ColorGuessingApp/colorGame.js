@@ -10,9 +10,16 @@ var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
-var easyBtn = document.querySelector("#easyBtn");
-var hardBtn = document.querySelector("#hardBtn");
+var modebuttons = document.querySelector(".mode");
 
+
+for(var i = 0; i < modebuttons.length; i++){
+    modebuttons[i].addEventListener("click", function(){
+        modebuttons[0].classList.remove("selected");
+        modebuttons[1].classList.remove("selected");
+        this.classList.add("selected");
+    });
+}
 
 easyBtn.addEventListener("click", function(){
     hardBtn.classList.remove("selected");
@@ -52,6 +59,8 @@ resetButton.addEventListener("click", function(){
 
     // Change colorDisplay to match picked color.
     colorDisplay.textContent = pickedColor;
+
+    this.textContent = "New Colors";
 
     messageDisplay.textContent = "";
 
