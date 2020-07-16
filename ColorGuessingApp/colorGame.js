@@ -1,5 +1,5 @@
 // Christopher Catzin
-// Last Modified: 7/9/2020
+// Last Modified: 7/15/2020
 
 var numOfSquares = 6;
 var colors = [];
