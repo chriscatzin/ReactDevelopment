@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Radium from 'radium';
 import './App.css';
 import Person from './Person/Person';\
-// Chris Catzin 7/29/20
+// Chris Catzin 8/1/20
 
 class App extends Component {
   state = {
